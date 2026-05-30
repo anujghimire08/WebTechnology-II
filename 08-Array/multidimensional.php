@@ -11,6 +11,10 @@
       }
       echo "<br>";
     }
+    //  foreach($array as $arr){
+    //   foreach($arr as $val) echo $val;
+    //  }
+    
 
     // echo "<pre>" ;
     // print_r($array);
