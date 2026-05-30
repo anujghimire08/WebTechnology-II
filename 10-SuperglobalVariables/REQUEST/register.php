@@ -1,4 +1,9 @@
 <?php
   // print_r($_REQUEST);
-  foreach($_REQUEST as $val) echo $val . "<br>";
+  if($_REQUEST){
+    $_REQUEST["xyz"] = "abc";
+    foreach($_REQUEST as $key => $val) {
+      echo $key .  "=>" . $val . "<br>";
+    }
+  }
 ?>
