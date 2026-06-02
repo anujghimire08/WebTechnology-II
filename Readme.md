@@ -1,13 +1,22 @@
 <p id="top"></p>
+<div align="center">
+ <h1>Web Technology – II</h1>
+ </div>
 
-# Web Technology – II
+<div align="center">
+💻 <em> Backend Development Journey (PHP)</em>
+</div>
+
+---
 
 <div align="center">
 
-<p>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" width="60"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="60"/>
-</p>
+<!-- Badges -->
+
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![Apache](https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=apache&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Learning-yellogreen?style=for-the-badge)
 
 </div>
 
@@ -70,8 +79,6 @@ This roadmap outlines my learning trajectory, tracking my progression from basic
          ├── 14-FileSystem ------► Scanning directories and generating dynamic index links
          └── 15-JSONHandling ----► Serializing inputs into JSON structures and localized storage
 ```
-
----
 
 ---
 
@@ -195,3 +202,26 @@ Throughout this subject, I am gradually learning:
  ┃ ┗ 📜form_validation1.php
  ┗ 📜Readme.md
 ```
+
+<p align="center">
+  <b>Don't forget to hit ⭐ if you loved it!!</b><br>
+  <sub>Built with <ruby>Caffeine<rt>☕</rt></ruby></sub>
+</p>
+
+<div align="center">
+  <tr>
+    <td align="center" title="Developer">
+      <a href="https://github.com/anujghimire08">
+        <img src="https://avatars.githubusercontent.com/u/215958168?v=4" width="90;" alt="anujghimire08"/>
+        <br />
+        <sub><b>@anujghimire08</b></b></sub>
+      </a>
+    </td>
+  </tr>
+</div>
+
+---
+
+<p align="center">
+  <a href="#top">🔺 Back to Top</a>
+</p>
