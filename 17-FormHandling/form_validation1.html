@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <style>
+      h1 {
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Form Validation</h1>
+    <form action="form_validation1.php" method="post">
+      <input type="text" name="user_name" placeholder="username" />
+      <br />
+      <br />
+      <input type="email" name="user_mail" placeholder="username@gmail.com" />
+      <br />
+      <br />
+      <h3>Tech Stack</h3>
+      <label for="php"
+        ><input
+          type="checkbox"
+          name="techstack[]"
+          id="php"
+          value="PHP"
+        />PHP</label
+      >
+      <label for="react"
+        ><input
+          type="checkbox"
+          name="techstack[]"
+          id="react"
+          value="React"
+        />React</label
+      ><label for="java"
+        ><input
+          type="checkbox"
+          name="techstack[]"
+          id="java"
+          value="Java"
+        />Java</label
+      ><label for="tcss"
+        ><input
+          type="checkbox"
+          name="techstack[]"
+          id="tcss"
+          value="TailwindCSS"
+        />TailwindCSS</label
+      ><label for="robust"
+        ><input
+          type="checkbox"
+          name="techstack[]"
+          id="robust"
+          value="Robust"
+        />Robust</label
+      >
+      <br />
+      <br />
+      <label for="male" name="gender" value="male"
+        ><input
+          type="radio"
+          name="user_gender"
+          value="Male"
+          id="male"
+        />Male</label
+      >
+      <label for="female" name="gender" value="male"
+        ><input
+          type="radio"
+          name="user_gender"
+          value="Female"
+          id="female"
+        />Female</label
+      >
+      <br />
+      <br />
+      <select name="country" id="">
+        <option selected disabled value="">Select Country</option>
+        <option value="Nepal">Nepal</option>
+        <option value="India">India</option>
+        <option value="China">China</option>
+        <option value="Brazil">Brazil</option>
+      </select>
+      <br />
+      <br />
+      <textarea
+        name="description"
+        rows="5"
+        cols="30"
+        placeholder="Write your message......"
+      ></textarea>
+      <br />
+      <br />
+      <button type="submit" name="submitbtn" value="submit">submit</button>
+      <!-- <input type="submit" value="submit" /> -->
+    </form>
+  </body>
+</html>
