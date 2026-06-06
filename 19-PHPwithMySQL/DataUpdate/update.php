@@ -1,19 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+  include("../DataRetrieval/config.php");
+  $id = $_GET["id"] ?? null;
+  if(!$id) die("invalid id");
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-</head>
 
-<body>
+  // print_r($_POST);
+  //  echo isset($_POST["name"]);
+  if(!empty($_POST) && $_SERVER['REQUEST_METHOD']==="POST"){
 
-  <?php
-      include("../DataRetrieval/config.php");
+    $emp = $connection->prepare("UPDATE employees SET name=:name,workinghrs=:wrkhrs,work=:work WHERE employees.id=:id");
+     $res = $emp->execute([
+      ":name"=>$_POST["name"],
+      ":wrkhrs"=>$_POST["workinghrs"],
+      ":work"=>$_POST["work"],
+      ":id"=> $id,
+     ]);
+     
+     header("Location:datalist.php?updated=1");
+     exit();
+    
+  }
+
+?>
+
+<?php
       // echo $_GET["id"];
-      $id = $_GET["id"] ?? null;
-      if(!$id) die("invalid id");
       $emps = $connection->prepare("SELECT * FROM employees WHERE employees.id=?");
       $emps->execute([$id]);
       // var_dump($emps);
@@ -31,18 +42,15 @@
       }
   ?>
 
-  <form method="post">
 
-    <input type="text" name="name" value="<?php echo htmlspecialchars($name); ?>">
+<form method="post" action="">
 
-    <input type="text" name="workinghrs" value="<?php echo htmlspecialchars($wrkhrs); ?>">
+  <input type="text" name="name" value="<?php echo htmlspecialchars($name); ?>">
 
-    <input type="text" name="work" value="<?php echo htmlspecialchars($work); ?>">
+  <input type="text" name="workinghrs" value="<?php echo htmlspecialchars($wrkhrs); ?>">
 
-    <input type="submit">
+  <input type="text" name="work" value="<?php echo htmlspecialchars($work); ?>">
 
-  </form>
+  <input type="submit" value="update">
 
-</body>
-
-</html>
+</form>
