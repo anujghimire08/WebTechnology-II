@@ -1,6 +1,15 @@
 <?php 
 
     include("../DataRetrieval/config.php");
+    
+    // print_r($_POST);
+        
+    if(isset($_POST["dlt"])){
+    $sql = $connection->query("DELETE FROM employees WHERE employees.id='". $_POST['dlt'] . "';"); 
+    
+    echo ($sql->rowCount()>0)? "Employee deleted successfully" : "Employee not found";
+   }
+   
     $sql = $connection->query("SELECT * FROM employees");
     echo "<h1>Employee Management</h1>";
     echo "<table frame='box' rules='all' cellpadding='10'> <tr><th>ID</th><th>Name</th><th>Working Hours</th><th>Work</th><th>Action</th></tr>";
@@ -20,11 +29,6 @@
     }
 
     echo "</table>";
-
-    // print_r($_POST);
-   if(isset($_POST["dlt"])){
-    $sql = $connection->query("DELETE FROM employees WHERE employees.id='". $_POST['dlt'] . "';");  
-   }
 
 
   ?>
