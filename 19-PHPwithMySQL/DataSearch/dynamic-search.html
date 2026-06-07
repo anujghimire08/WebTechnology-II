@@ -4,15 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dynamic Search</title>
+    <style>
+      .hide {
+        display: none;
+      }
+    </style>
   </head>
   <body>
-    <form action="dynamic-search.php" method="post">
+    <form action="" method="post">
       <input
         type="text"
         name="queryname"
         placeholder="type name to search..."
       />
-      <button type="submit" value="received" name="submit">Search</button>
+      <input type="reset" value="Clear" />
     </form>
+    <br /><br />
+    <table frame="box" rules="all" cellpadding="5">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Working Hours</th>
+          <th>Work</th>
+        </tr>
+      </thead>
+      <tbody id="result"></tbody>
+    </table>
+    <script>
+      const userType = document.querySelector("input");
+      const result = document.querySelector("#result");
+      const table = document.querySelector("table");
+      table.classList.add("hide");
+
+      userType.addEventListener("input", function () {
+        let query = this.value.trim();
+        let xhr = new XMLHttpRequest();
+        xhr.open("POST", "dynamic-search.php", true);
+        xhr.setRequestHeader(
+          "Content-type",
+          "application/x-www-form-urlencoded",
+        );
+        xhr.onload = function () {
+          result.innerHTML = this.responseText;
+          table.classList.remove("hide");
+        };
+        xhr.send("queryname=" + encodeURIComponent(query));
+      });
+    </script>
   </body>
 </html>

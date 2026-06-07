@@ -15,14 +15,6 @@
     // print_r($rows);
     // echo "</pre>";
     // echo count($rows);
-    if(count($rows)>0){
-    echo "<table frame='box' rules='all' cellpadding='5'>
-    <tr>
-      <th>S.N</th>
-      <th>Name</th>
-      <th>Working Hours</th>
-      <th>Work</th>
-    </tr>";
     foreach($rows as $row){
       echo "<tr>";
       echo "<td>" . $row->id . "</td>";
@@ -31,12 +23,6 @@
       echo "<td>" . $row->work . "</td>";
       echo "</tr>";
     }
-      echo "</table>";
-    }else{
-        echo "no user data result found";
-    }
-  }else{
-    echo "no data sumbitted";
   }
   
 ?>

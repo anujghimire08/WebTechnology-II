@@ -9,7 +9,7 @@
   $connection = new PDO("mysql:host=$host;dbname=$db",$username,$pass);
   //  print_r($connection);
   $connection->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-  echo "connection success";
+  // echo "connection success";
  }catch(PDOException $err){ 
   die("err:" . $err->getMessage());
  }
