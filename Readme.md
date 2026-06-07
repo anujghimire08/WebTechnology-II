@@ -11,11 +11,11 @@
 
 <div align="center">
 
-<!-- Badges -->
-
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![Apache](https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=apache&logoColor=white)
+![XAMPP](https://img.shields.io/badge/XAMPP-FB7A24?style=for-the-badge&logo=xampp&logoColor=white)
+![Apache](https://img.shields.io/badge/Apache-2C2C2C?style=for-the-badge&logo=apache&logoColor=D22128)
 ![Status](https://img.shields.io/badge/Status-Learning-yellogreen?style=for-the-badge)
 
 </div>
@@ -47,37 +47,49 @@ The purpose of this repository is to:
 This roadmap outlines my learning trajectory, tracking my progression from basic syntax to full file processing and secure stateful workflows.
 
 ```
-  [Phase 1: Foundations & UI Integration]
-         │
-         ├── 01-Echo ------------► Outputting raw data streams & HTML formatting
-         ├── 02-Variables -------► Memory allocation, scope bounds, and system constants
-         ├── 03-PHPwithHTML -----► Weaving backend rendering engines within web templates
-         └── 11-Include ---------► Modularizing assets via file separation architectures
-         │
-  [Phase 2: Types, Logic & Data Structures]
-         │
-         ├── 04-DataTypes -------► Primitives, structural maps, and type verification
-         ├── 05-Operators -------► Expression engines, math formulas, and logic operators
-         ├── 06-BranchStatement -► Conditional flow architectures and array iterations
-         ├── 08-Array -----------► Data mutations via built-in array handling functions
-         └── 09-Casting ---------► Data masking and explicit type-conversion safety
-         │
-  [Phase 3: Abstraction & Event Handling]
-         │
-         ├── 07-Functions -------► Reusable code blocks, variable contexts, and arrow syntax
-         ├── 12-EventHandling/ --► Triggering backend functions via client side UI clicks
-         └── 16-DateandTime -----► System timestamps and localization formatting routines
-         │
-  [Phase 4: State Management & Form Security]
-         │
-         ├── 10-Superglobals ----► Stateful persistence layers via Session CRUD operations
-         └── 17-FormHandling ----► Defending form scopes through data validation and sanitation
-         │
-  [Phase 5: File Systems & Serialization]
-         │
-         ├── 13-FileHandling ----► Secure file upload parsing and server destination storage
-         ├── 14-FileSystem ------► Scanning directories and generating dynamic index links
-         └── 15-JSONHandling ----► Serializing inputs into JSON structures and localized storage
+[Phase 1: Foundations & UI Integration]
+│
+├── 01-Echo ------------► Outputting raw data streams & HTML formatting
+├── 02-Variables -------► Memory allocation, scope, constants, and data binding
+├── 03-PHPwithHTML -----► Embedding PHP into frontend structure rendering
+└── 11-Include ---------► Modular architecture using reusable PHP components
+│
+[Phase 2: Types, Logic & Control Flow]
+│
+├── 04-DataTypes -------► Primitive and compound data structures with validation
+├── 05-Operators -------► Arithmetic, logical, and comparison operations
+├── 06-BranchStatement -► Control flow (if, loops, goto, return, exit, die)
+├── 08-Array -----------► Indexed, associative, and multidimensional arrays
+└── 09-Casting ---------► Type conversion and data handling safety
+│
+[Phase 3: Functions & Abstraction]
+│
+├── 07-Functions -------► Reusable logic blocks, scope handling, arrow functions
+└── 12-EventHandling/ --► Trigger-based backend execution via UI actions
+│
+[Phase 4: State Management & Server Variables]
+│
+├── 10-SuperglobalVariables
+│ ├── COOKIE ------► Client-side persistent data handling
+│ ├── FILE -------► File upload and server storage management
+│ ├── GET ---------► URL-based data transmission
+│ ├── POST --------► Secure form data submission
+│ ├── REQUEST -----► Unified request handling
+│ ├── SERVER ------► Server environment variables
+│ └── SESSION -----► Server-side session management
+│
+[Phase 5: File Handling & Data Processing]
+│
+├── 13-FileHandling ----► File read/write operations with dynamic content
+├── 14-FileSystem ------► Directory scanning and file listing systems
+└── 15-JSONHandling ----► Encoding and decoding structured data formats
+│
+[Phase 6: Web Forms & Mini Projects]
+│
+├── 16-DateandTime -----► Date/time formatting and system timestamps
+├── 17-FormHandling ----► Validation, sanitization, and multi-form workflows
+├── 18-BasicWebsite ----► Multi-page PHP website structure (header/footer system)
+└── 19-PHPwithMySQL ----► CRUD operations, database connection (MySQL/PDO)
 ```
 
 ---
@@ -121,11 +133,14 @@ Throughout this subject, I am gradually learning:
  ┣ 📂05-Operators
  ┃ ┗ 📜index.php
  ┣ 📂06-BranchStatement
+ ┃ ┣ 📜die.php
  ┃ ┣ 📜dowhile.php
+ ┃ ┣ 📜exit.php
  ┃ ┣ 📜foreach.php
  ┃ ┣ 📜goto.php
  ┃ ┣ 📜loops.php
  ┃ ┣ 📜nested.php
+ ┃ ┣ 📜return.php
  ┃ ┗ 📜while.php
  ┣ 📂07-Functions
  ┃ ┣ 📜arrowfunc.php
@@ -199,7 +214,45 @@ Throughout this subject, I am gradually learning:
  ┃ ┗ 📜time.php
  ┣ 📂17-FormHandling
  ┃ ┣ 📜form_validation1.html
- ┃ ┗ 📜form_validation1.php
+ ┃ ┣ 📜form_validation1.php
+ ┃ ┣ 📜form_validation2.html
+ ┃ ┗ 📜form_validation2.php
+ ┣ 📂18-BasicWebsite
+ ┃ ┣ 📜about.php
+ ┃ ┣ 📜contact.php
+ ┃ ┣ 📜footer.php
+ ┃ ┣ 📜header.php
+ ┃ ┣ 📜index.php
+ ┃ ┣ 📜main.php
+ ┃ ┣ 📜php.png
+ ┃ ┗ 📜style.css
+ ┣ 📂19-PHPwithMySQL
+ ┃ ┣ 📂Database Connectivity
+ ┃ ┃ ┣ 📜mysqli.php
+ ┃ ┃ ┗ 📜pdo.php
+ ┃ ┣ 📂DataDelete
+ ┃ ┃ ┣ 📜dynamic-delete.php
+ ┃ ┃ ┣ 📜preview.png
+ ┃ ┃ ┗ 📜static-delete.php
+ ┃ ┣ 📂DataRetrieval
+ ┃ ┃ ┣ 📜config.php
+ ┃ ┃ ┣ 📜dropdown.php
+ ┃ ┃ ┗ 📜read.php
+ ┃ ┣ 📂DataSearch
+ ┃ ┃ ┣ 📜dynamic-search.html
+ ┃ ┃ ┣ 📜dynamic-search.php
+ ┃ ┃ ┗ 📜static-search.php
+ ┃ ┣ 📂DataStore
+ ┃ ┃ ┣ 📜dynamic-insert.html
+ ┃ ┃ ┣ 📜dynamic-insert.php
+ ┃ ┃ ┗ 📜static-insert.php
+ ┃ ┣ 📂DataUpdate
+ ┃ ┃ ┣ 📜datalist.php
+ ┃ ┃ ┣ 📜static-data.php
+ ┃ ┃ ┗ 📜update.php
+ ┃ ┗ 📂PopulateForm
+ ┃ ┃ ┣ 📜datalist.php
+ ┃ ┃ ┗ 📜form.php
  ┗ 📜Readme.md
 ```
 
