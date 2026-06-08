@@ -36,20 +36,33 @@
       const result = document.querySelector("#result");
       const table = document.querySelector("table");
       table.classList.add("hide");
-
-      userType.addEventListener("input", function () {
-        let query = this.value.trim();
-        let xhr = new XMLHttpRequest();
-        xhr.open("POST", "dynamic-search.php", true);
-        xhr.setRequestHeader(
-          "Content-type",
-          "application/x-www-form-urlencoded",
-        );
-        xhr.onload = function () {
-          result.innerHTML = this.responseText;
-          table.classList.remove("hide");
-        };
-        xhr.send("queryname=" + encodeURIComponent(query));
+      let timmer;
+      userType.addEventListener("keyup", function () {
+        clearTimeout(timmer);
+        timmer = setTimeout(function () {
+          let query = userType.value.trim();
+          // console.log(query);
+          if (query === "") {
+            table.classList.add("hide");
+            result.innerHTML = "";
+            return;
+          }
+          let xhr = new XMLHttpRequest();
+          xhr.open("POST", "dynamic-search.php", true);
+          xhr.setRequestHeader(
+            "Content-type",
+            "application/x-www-form-urlencoded",
+          );
+          xhr.onload = function () {
+            result.innerHTML = this.responseText;
+            if (this.responseText.trim() === "") {
+              table.classList.add("hide");
+            } else {
+              table.classList.remove("hide");
+            }
+          };
+          xhr.send("queryname=" + encodeURIComponent(query));
+        }, 600);
       });
     </script>
   </body>

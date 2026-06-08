@@ -15,13 +15,17 @@
     // print_r($rows);
     // echo "</pre>";
     // echo count($rows);
-    foreach($rows as $row){
-      echo "<tr>";
-      echo "<td>" . $row->id . "</td>";
-      echo "<td>" . $row->name . "</td>";
-      echo "<td>" . $row->workinghrs . "</td>";
-      echo "<td>" . $row->work . "</td>";
-      echo "</tr>";
+    if (count($rows) > 0) {
+      foreach ($rows as $row) {
+        echo "<tr>";
+        echo "<td>{$row->id}</td>";
+        echo "<td>{$row->name}</td>";
+        echo "<td>{$row->workinghrs}</td>";
+        echo "<td>{$row->work}</td>";
+        echo "</tr>";
+      }
+    } else {
+       echo "<tr><td colspan='4'>No results found</td></tr>";
     }
   }
   
