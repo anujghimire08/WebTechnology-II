@@ -2,11 +2,11 @@
 
  class Math {
 
-    function __call($method, $args) {
+    function __call($method, $args) : int | string {
       if($method ==="add"){
         return array_sum($args);
       }else{
-        echo "Method '$method' does not exist";
+        return "Method '$method' does not exist";
       }
     }
 }
