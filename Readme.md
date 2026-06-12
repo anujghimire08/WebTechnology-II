@@ -46,58 +46,83 @@ The purpose of this repository is to:
 
 This roadmap outlines my learning trajectory, tracking my progression from basic syntax to full file processing and secure stateful workflows.
 
-```
+```text
 [Phase 1: Foundations & UI Integration]
 │
-├── 01-Echo ------------► Outputting raw data streams & HTML formatting
-├── 02-Variables -------► Memory allocation, scope, constants, and data binding
-├── 03-PHPwithHTML -----► Embedding PHP into frontend structure rendering
-└── 11-Include ---------► Modular architecture using reusable PHP components
+├── 01-Echo ------------► Output rendering and HTML response generation
+├── 02-Variables -------► Variables, constants, scope, and memory
+├── 03-PHPwithHTML -----► Embedding backend logic inside frontend templates
+└── 11-Include ---------► Reusable layouts and modular architecture
 │
-[Phase 2: Types, Logic & Control Flow]
+[Phase 2: Data, Logic & Control Flow]
 │
-├── 04-DataTypes -------► Primitive and compound data structures with validation
+├── 04-DataTypes -------► Primitive and complex data structures
 ├── 05-Operators -------► Arithmetic, logical, and comparison operations
-├── 06-BranchStatement -► Control flow (if, loops, goto, return, exit, die)
+├── 06-BranchStatement -► Conditional flow and loops
 ├── 08-Array -----------► Indexed, associative, and multidimensional arrays
-└── 09-Casting ---------► Type conversion and data handling safety
+└── 09-Casting ---------► Type conversion and validation safety
 │
-[Phase 3: Functions & Abstraction]
+[Phase 3: Functions & Event Handling]
 │
-├── 07-Functions -------► Reusable logic blocks, scope handling, arrow functions
-└── 12-EventHandling/ --► Trigger-based backend execution via UI actions
+├── 07-Functions -------► User-defined functions, nesting, arrow functions
+└── 12-EventHandling ---► Trigger-based backend execution
 │
-[Phase 4: State Management & Server Variables]
+[Phase 4: Request Lifecycle & State Management]
 │
 ├── 10-SuperglobalVariables
-│ ├── COOKIE ------► Client-side persistent data handling
-│ ├── FILE -------► File upload and server storage management
-│ ├── GET ---------► URL-based data transmission
-│ ├── POST --------► Secure form data submission
-│ ├── REQUEST -----► Unified request handling
-│ ├── SERVER ------► Server environment variables
-│ └── SESSION -----► Server-side session management
+│ ├── COOKIE --------► Persistent client-side storage
+│ ├── FILE ----------► Upload handling and file validation
+│ ├── GET -----------► URL query parameter handling
+│ ├── POST ----------► Form submission workflows
+│ ├── REQUEST -------► Combined request abstraction
+│ ├── SERVER --------► Environment and server metadata
+│ └── SESSION -------► Stateful user sessions
 │
-[Phase 5: File Handling & Data Processing]
+[Phase 5: File Systems & Structured Data]
 │
-├── 13-FileHandling ----► File read/write operations with dynamic content
-├── 14-FileSystem ------► Directory scanning and file listing systems
-└── 15-JSONHandling ----► Encoding and decoding structured data formats
+├── 13-FileHandling ----► File read/write operations
+├── 14-FileSystem ------► Directory traversal and file listing
+└── 15-JSONHandling ----► JSON encoding/decoding workflows
 │
-[Phase 6: Web Forms & Mini Projects]
+[Phase 6: Forms & Dynamic Websites]
 │
-├── 16-DateandTime -----► Date/time formatting and system timestamps
-├── 17-FormHandling ----► Validation, sanitization, and multi-form workflows
-├── 18-BasicWebsite ----► Multi-page PHP website structure (header/footer system)
-└── 19-PHPwithMySQL ----► CRUD operations, database connection (MySQL/PDO)
+├── 16-DateandTime -----► Timestamps and date formatting
+├── 17-FormHandling ----► Validation, sanitization, and form security
+└── 18-BasicWebsite ----► Multi-page PHP layout architecture
+│
+[Phase 7: Database Development]
+│
+├── 19-PHPwithMySQL
+│ ├── Connectivity ----► mysqli and PDO connections
+│ ├── DataStore -------► Insert operations
+│ ├── DataRetrieval ---► Read and dropdown population
+│ ├── DataUpdate ------► Update workflows
+│ ├── DataDelete ------► Delete operations
+│ ├── DataSearch ------► Static and dynamic search systems
+│ └── PopulateForm ----► Data prefill forms
+│
+[Phase 8: Object-Oriented PHP]
+│
+├── 20-OOPs
+│ ├── Classes & Objects ----► Encapsulation and abstraction
+│ ├── Traits --------------► Code reuse patterns
+│ ├── Method Chaining -----► Fluent interface design
+│ ├── Namespaces ----------► Scope organization
+│ ├── Autoloading ---------► Automatic class loading
+│ └── OOP + MySQL ---------► Database abstraction with classes
+│
+[Phase 9: Mini Projects]
+│
+└── Projects
+  └── Pagination --------► Dynamic data pagination using LIMIT & OFFSET
 ```
 
 ---
 
 ## 🚧 Project Status
 
-🟡 This repository is in **learning / practice phase**  
-🟡 Not a production project  
+🟡 This repository is in **learning / practice phase**
+🟡 Not a production project
 🟡 Code reflects **academic exercises and experiments**
 
 ---
@@ -120,6 +145,10 @@ Throughout this subject, I am gradually learning:
 
 ```text
 📦WebTechnology-II
+ ┣ 📂.github
+ ┃ ┗ 📂workflows
+ ┃ ┃ ┣ 📜php.yml
+ ┃ ┃ ┗ 📜welcome-bot.yml
  ┣ 📂01-Echo
  ┃ ┗ 📜index.php
  ┣ 📂02-Variables
@@ -241,6 +270,7 @@ Throughout this subject, I am gradually learning:
  ┃ ┣ 📂DataSearch
  ┃ ┃ ┣ 📜dynamic-search.html
  ┃ ┃ ┣ 📜dynamic-search.php
+ ┃ ┃ ┣ 📜preview.png
  ┃ ┃ ┗ 📜static-search.php
  ┃ ┣ 📂DataStore
  ┃ ┃ ┣ 📜dynamic-insert.html
@@ -253,6 +283,36 @@ Throughout this subject, I am gradually learning:
  ┃ ┗ 📂PopulateForm
  ┃ ┃ ┣ 📜datalist.php
  ┃ ┃ ┗ 📜form.php
+ ┣ 📂20-OOPs
+ ┃ ┣ 📂NameSpace
+ ┃ ┃ ┣ 📜admin.php
+ ┃ ┃ ┣ 📜person.php
+ ┃ ┃ ┗ 📜user.php
+ ┃ ┣ 📂OOPsWithMySQL
+ ┃ ┃ ┣ 📜config.php
+ ┃ ┃ ┣ 📜crud.php
+ ┃ ┃ ┗ 📜pdo.php
+ ┃ ┣ 📜autoload.php
+ ┃ ┣ 📜BankAccount.php
+ ┃ ┣ 📜basics.php
+ ┃ ┣ 📜call.php
+ ┃ ┣ 📜circle.php
+ ┃ ┣ 📜formhandlingoops.php
+ ┃ ┣ 📜get.php
+ ┃ ┣ 📜invoke.php
+ ┃ ┣ 📜methodchaining.php
+ ┃ ┣ 📜set.php
+ ┃ ┣ 📜staticbindng.php
+ ┃ ┣ 📜traits.php
+ ┃ ┣ 📜traitsoverridden.php
+ ┃ ┗ 📜typehint.php
+ ┣ 📂Projects
+ ┃ ┗ 📂Pagination
+ ┃ ┃ ┣ 📜db.php
+ ┃ ┃ ┣ 📜index.php
+ ┃ ┃ ┣ 📜pagination.php
+ ┃ ┃ ┣ 📜paginationpreview.webp
+ ┃ ┃ ┗ 📜style.css
  ┗ 📜Readme.md
 ```
 
