@@ -11,7 +11,6 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
  $sessioncsrf = $_SESSION["csrf"] ?? "";
  $postcsrf = $_POST["csrf"] ?? "";
 
- var_Dump(hash_equals($sessioncsrf,$postcsrf));
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if(!isset($_POST["csrf"]) ||!hash_equals($sessioncsrf,$postcsrf)){
@@ -21,7 +20,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       $to = htmlspecialchars($_POST['to']);
       echo "Transferred Rs.$amount to $to";
       $_SESSION["csrf"] = bin2hex(random_bytes(32));
-      exit;
     }
 }
 ?>
