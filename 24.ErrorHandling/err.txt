@@ -1,0 +1,2 @@
+Error: [2] Undefined variable $notdefined - C:\xampp\htdocs\WebTechnology-II\24.ErrorHandling\err.php , at line: 19
+Error: [2] Undefined variable $notdefined - C:\xampp\htdocs\WebTechnology-II\24.ErrorHandling\err.php , at line: 19
