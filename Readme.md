@@ -306,6 +306,106 @@ Throughout this subject, I am gradually learning:
  ┃ ┣ 📜traits.php
  ┃ ┣ 📜traitsoverridden.php
  ┃ ┗ 📜typehint.php
+ ┣ 📂21-CrossSiteRequestForgery
+ ┃ ┣ 📜attacker.html
+ ┃ ┗ 📜bank.php
+ ┣ 📂22-FileValidation
+ ┃ ┗ 📜demo.php
+ ┣ 📂23-Hashing
+ ┃ ┗ 📜hashing.php
+ ┣ 📂24.ErrorHandling
+ ┃ ┣ 📜err.php
+ ┃ ┗ 📜err.txt
+ ┣ 📂LabWork
+ ┃ ┗ 📂Lab-1
+ ┃ ┃ ┣ 📜info.php
+ ┃ ┃ ┗ 📜intro.php
+ ┣ 📂PHPPracticeQuestions
+ ┃ ┣ 📂01-BasicOutputPrint
+ ┃ ┃ ┣ 📜qn1.php
+ ┃ ┃ ┣ 📜qn2.php
+ ┃ ┃ ┣ 📜qn3.php
+ ┃ ┃ ┣ 📜qn4.php
+ ┃ ┃ ┗ 📜qn5.php
+ ┃ ┣ 📂02-VariablesandDataTypes
+ ┃ ┃ ┣ 📜qn10.php
+ ┃ ┃ ┣ 📜qn11.php
+ ┃ ┃ ┣ 📜qn12.php
+ ┃ ┃ ┣ 📜qn13.php
+ ┃ ┃ ┣ 📜qn14.php
+ ┃ ┃ ┣ 📜qn15.php
+ ┃ ┃ ┣ 📜qn6.php
+ ┃ ┃ ┣ 📜qn7.php
+ ┃ ┃ ┣ 📜qn8.php
+ ┃ ┃ ┗ 📜qn9.php
+ ┃ ┣ 📂03-Constants
+ ┃ ┃ ┣ 📜qn16.php
+ ┃ ┃ ┣ 📜qn17.php
+ ┃ ┃ ┣ 📜qn18.php
+ ┃ ┃ ┣ 📜qn19.php
+ ┃ ┃ ┗ 📜qn20.php
+ ┃ ┣ 📂04-ArithmeticOperators
+ ┃ ┃ ┣ 📜qn21.php
+ ┃ ┃ ┣ 📜qn22.php
+ ┃ ┃ ┣ 📜qn23.php
+ ┃ ┃ ┣ 📜qn24.php
+ ┃ ┃ ┣ 📜qn25.php
+ ┃ ┃ ┗ 📜qn26.php
+ ┃ ┣ 📂05- AssignmentOperators
+ ┃ ┃ ┣ 📜qn27.php
+ ┃ ┃ ┣ 📜qn28.php
+ ┃ ┃ ┣ 📜qn29.php
+ ┃ ┃ ┣ 📜qn30.php
+ ┃ ┃ ┗ 📜qn31.php
+ ┃ ┣ 📂06-ComparisionOperator
+ ┃ ┃ ┣ 📜qn32.php
+ ┃ ┃ ┣ 📜qn33.php
+ ┃ ┃ ┣ 📜qn34.php
+ ┃ ┃ ┣ 📜qn35.php
+ ┃ ┃ ┗ 📜qn36.php
+ ┃ ┣ 📂07-LogicalOperators
+ ┃ ┃ ┣ 📜qn37.php
+ ┃ ┃ ┣ 📜qn38.php
+ ┃ ┃ ┣ 📜qn39.php
+ ┃ ┃ ┣ 📜qn40.php
+ ┃ ┃ ┗ 📜qn41.php
+ ┃ ┣ 📂08-StringOperator
+ ┃ ┃ ┣ 📜qn42.php
+ ┃ ┃ ┣ 📜qn43.php
+ ┃ ┃ ┣ 📜qn44.php
+ ┃ ┃ ┗ 📜qn45.php
+ ┃ ┣ 📂09-ConditionalOperator
+ ┃ ┃ ┣ 📜qn46.php
+ ┃ ┃ ┣ 📜qn47.php
+ ┃ ┃ ┣ 📜qn48.php
+ ┃ ┃ ┗ 📜qn49.php
+ ┃ ┣ 📂10-ControlStatement
+ ┃ ┃ ┣ 📜qn50.php
+ ┃ ┃ ┣ 📜qn51.php
+ ┃ ┃ ┣ 📜qn52.php
+ ┃ ┃ ┣ 📜qn53.php
+ ┃ ┃ ┣ 📜qn54.php
+ ┃ ┃ ┣ 📜qn55.php
+ ┃ ┃ ┣ 📜qn56.php
+ ┃ ┃ ┣ 📜qn57.php
+ ┃ ┃ ┣ 📜qn58.php
+ ┃ ┃ ┗ 📜qn59.php
+ ┃ ┣ 📂11-Functions
+ ┃ ┃ ┣ 📜qn60.php
+ ┃ ┃ ┣ 📜qn61.php
+ ┃ ┃ ┣ 📜qn62.php
+ ┃ ┃ ┣ 📜qn63.php
+ ┃ ┃ ┣ 📜qn64.php
+ ┃ ┃ ┣ 📜qn65.php
+ ┃ ┃ ┣ 📜qn66.php
+ ┃ ┃ ┗ 📜qn67.php
+ ┃ ┗ 📂12-FileInclusion
+ ┃ ┃ ┣ 📜config.ini.php
+ ┃ ┃ ┣ 📜footer.php
+ ┃ ┃ ┣ 📜header.php
+ ┃ ┃ ┣ 📜qn68.php
+ ┃ ┃ ┣ 📜qn69.php
+ ┃ ┃ ┗ 📜qn70.php
  ┣ 📂Projects
  ┃ ┗ 📂Pagination
  ┃ ┃ ┣ 📜db.php
