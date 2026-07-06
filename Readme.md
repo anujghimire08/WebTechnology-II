@@ -47,74 +47,86 @@ The purpose of this repository is to:
 This roadmap outlines my learning trajectory, tracking my progression from basic syntax to full file processing and secure stateful workflows.
 
 ```text
-[Phase 1: Foundations & UI Integration]
+[Phase 1: PHP Fundamentals]
 │
-├── 01-Echo ------------► Output rendering and HTML response generation
-├── 02-Variables -------► Variables, constants, scope, and memory
-├── 03-PHPwithHTML -----► Embedding backend logic inside frontend templates
-└── 11-Include ---------► Reusable layouts and modular architecture
-│
-[Phase 2: Data, Logic & Control Flow]
-│
-├── 04-DataTypes -------► Primitive and complex data structures
-├── 05-Operators -------► Arithmetic, logical, and comparison operations
-├── 06-BranchStatement -► Conditional flow and loops
-├── 08-Array -----------► Indexed, associative, and multidimensional arrays
-└── 09-Casting ---------► Type conversion and validation safety
-│
-[Phase 3: Functions & Event Handling]
-│
-├── 07-Functions -------► User-defined functions, nesting, arrow functions
-└── 12-EventHandling ---► Trigger-based backend execution
-│
-[Phase 4: Request Lifecycle & State Management]
+├── 01-Echo ----------------► Output and response generation
+├── 02-Variables -----------► Variables, constants, and scope
+├── 03-PHPwithHTML ---------► Mixing PHP with HTML templates
+├── 04-DataTypes -----------► Primitive and compound data types
+├── 05-Operators -----------► Arithmetic, comparison, logical operators
+├── 06-BranchStatement -----► Conditions and looping constructs
+├── 07-Functions -----------► Built-in, user-defined, nested & arrow functions
+├── 08-Array ---------------► Indexed, associative & multidimensional arrays
+└── 09-Casting -------------► Type casting and conversions
+
+[Phase 2: Request Handling & Reusability]
 │
 ├── 10-SuperglobalVariables
-│ ├── COOKIE --------► Persistent client-side storage
-│ ├── FILE ----------► Upload handling and file validation
-│ ├── GET -----------► URL query parameter handling
-│ ├── POST ----------► Form submission workflows
-│ ├── REQUEST -------► Combined request abstraction
-│ ├── SERVER --------► Environment and server metadata
-│ └── SESSION -------► Stateful user sessions
+│   ├── GET --------------► URL parameter handling
+│   ├── POST ------------► Form submission
+│   ├── REQUEST ---------► Unified request handling
+│   ├── COOKIE ----------► Client-side persistence
+│   ├── SESSION ---------► Stateful applications
+│   ├── SERVER ----------► Server environment information
+│   ├── GLOBALS ---------► Global variable access
+│   └── FILE -----------► File uploads
 │
-[Phase 5: File Systems & Structured Data]
+├── 11-Include ------------► Modular PHP applications
+└── 12-EventHandling ------► Event-driven form processing
+
+[Phase 3: Files & Data Processing]
 │
-├── 13-FileHandling ----► File read/write operations
-├── 14-FileSystem ------► Directory traversal and file listing
-└── 15-JSONHandling ----► JSON encoding/decoding workflows
+├── 13-FileHandling --------► Reading and writing files
+├── 14-FileSystemHandling --► Directory and filesystem operations
+├── 15-JSONHandling --------► JSON encoding & decoding
+├── 16-DateandTime ---------► Date and time manipulation
+└── 17-FormHandling --------► Validation and sanitization
+
+[Phase 4: Dynamic Web Development]
 │
-[Phase 6: Forms & Dynamic Websites]
+└── 18-BasicWebsite --------► Building reusable multi-page PHP websites
+
+[Phase 5: Database Programming]
 │
-├── 16-DateandTime -----► Timestamps and date formatting
-├── 17-FormHandling ----► Validation, sanitization, and form security
-└── 18-BasicWebsite ----► Multi-page PHP layout architecture
+└── 19-PHPwithMySQL
+    ├── Database Connectivity ─► MySQLi & PDO
+    ├── DataStore ------------► INSERT operations
+    ├── DataRetrieval --------► SELECT queries
+    ├── DataUpdate -----------► UPDATE queries
+    ├── DataDelete -----------► DELETE queries
+    ├── DataSearch -----------► Search functionality
+    └── PopulateForm ---------► Editing existing records
+
+[Phase 6: Object-Oriented PHP]
 │
-[Phase 7: Database Development]
+└── 20-OOPs
+    ├── Classes & Objects ----► OOP fundamentals
+    ├── Encapsulation --------► Getters & setters
+    ├── Type Hinting ---------► Strict typing
+    ├── Traits --------------► Code reuse
+    ├── Method Chaining ------► Fluent interfaces
+    ├── Namespaces ----------► Code organization
+    ├── Autoloading ---------► Automatic class loading
+    └── OOP with MySQL ------► CRUD using classes
+
+[Phase 7: PHP Security]
 │
-├── 19-PHPwithMySQL
-│ ├── Connectivity ----► mysqli and PDO connections
-│ ├── DataStore -------► Insert operations
-│ ├── DataRetrieval ---► Read and dropdown population
-│ ├── DataUpdate ------► Update workflows
-│ ├── DataDelete ------► Delete operations
-│ ├── DataSearch ------► Static and dynamic search systems
-│ └── PopulateForm ----► Data prefill forms
+├── 21-CrossSiteRequestForgery ─► CSRF attack prevention
+├── 22-FileValidation ----------► Secure file upload validation
+├── 23-Hashing -----------------► Password hashing & verification
+└── 24-ErrorHandling -----------► Error reporting & exception handling
+
+[Phase 8: Practice & Projects]
 │
-[Phase 8: Object-Oriented PHP]
-│
-├── 20-OOPs
-│ ├── Classes & Objects ----► Encapsulation and abstraction
-│ ├── Traits --------------► Code reuse patterns
-│ ├── Method Chaining -----► Fluent interface design
-│ ├── Namespaces ----------► Scope organization
-│ ├── Autoloading ---------► Automatic class loading
-│ └── OOP + MySQL ---------► Database abstraction with classes
-│
-[Phase 9: Mini Projects]
-│
+├── LabWork --------------------► Practical laboratory exercises
+├── PHPPracticeQuestions -------► Topic-wise coding practice
 └── Projects
-  └── Pagination --------► Dynamic data pagination using LIMIT & OFFSET
+    ├── Pagination ------------► Database pagination
+    └── UserProfileManagementSystem
+        ├── Authentication ----► Login & registration
+        ├── Profile Upload ----► Image uploads
+        ├── Session ----------► User authentication
+        └── CRUD ------------► Complete mini application
 ```
 
 ---
@@ -145,10 +157,6 @@ Throughout this subject, I am gradually learning:
 
 ```text
 📦WebTechnology-II
- ┣ 📂.github
- ┃ ┗ 📂workflows
- ┃ ┃ ┣ 📜php.yml
- ┃ ┃ ┗ 📜welcome-bot.yml
  ┣ 📂01-Echo
  ┃ ┗ 📜index.php
  ┣ 📂02-Variables
@@ -317,9 +325,31 @@ Throughout this subject, I am gradually learning:
  ┃ ┣ 📜err.php
  ┃ ┗ 📜err.txt
  ┣ 📂LabWork
- ┃ ┗ 📂Lab-1
+ ┃ ┣ 📂Lab-1
  ┃ ┃ ┣ 📜info.php
- ┃ ┃ ┗ 📜intro.php
+ ┃ ┃ ┣ 📜intro.php
+ ┃ ┃ ┗ 📜Lab Report 1 Web Tech 2.pdf
+ ┃ ┣ 📂Lab-2
+ ┃ ┃ ┣ 📜conditional.php
+ ┃ ┃ ┣ 📜ConstandVariable.php
+ ┃ ┃ ┣ 📜controlloops.php
+ ┃ ┃ ┣ 📜Lab 2.pdf
+ ┃ ┃ ┣ 📜OperatorMatrixEvaluation.php
+ ┃ ┃ ┗ 📜PrimitivesandMath.php
+ ┃ ┗ 📂Lab-3
+ ┃ ┃ ┣ 📂LayoutModularization
+ ┃ ┃ ┃ ┣ 📜about.php
+ ┃ ┃ ┃ ┣ 📜contact.php
+ ┃ ┃ ┃ ┣ 📜footer.php
+ ┃ ┃ ┃ ┣ 📜header.php
+ ┃ ┃ ┃ ┣ 📜index.php
+ ┃ ┃ ┃ ┣ 📜main.php
+ ┃ ┃ ┃ ┣ 📜php.png
+ ┃ ┃ ┃ ┣ 📜style.css
+ ┃ ┃ ┃ ┗ 📜useCaseInfo.php
+ ┃ ┃ ┣ 📜Lab 3.pdf
+ ┃ ┃ ┣ 📜ParametricReturnFunction.php
+ ┃ ┃ ┗ 📜StringFunc.php
  ┣ 📂PHPPracticeQuestions
  ┃ ┣ 📂01-BasicOutputPrint
  ┃ ┃ ┣ 📜qn1.php
@@ -399,20 +429,34 @@ Throughout this subject, I am gradually learning:
  ┃ ┃ ┣ 📜qn65.php
  ┃ ┃ ┣ 📜qn66.php
  ┃ ┃ ┗ 📜qn67.php
- ┃ ┗ 📂12-FileInclusion
+ ┃ ┣ 📂12-FileInclusion
  ┃ ┃ ┣ 📜config.ini.php
  ┃ ┃ ┣ 📜footer.php
  ┃ ┃ ┣ 📜header.php
  ┃ ┃ ┣ 📜qn68.php
  ┃ ┃ ┣ 📜qn69.php
  ┃ ┃ ┗ 📜qn70.php
+ ┃ ┗ 📜PHP Practice Questions.pdf
  ┣ 📂Projects
- ┃ ┗ 📂Pagination
+ ┃ ┣ 📂Pagination
  ┃ ┃ ┣ 📜db.php
  ┃ ┃ ┣ 📜index.php
  ┃ ┃ ┣ 📜pagination.php
  ┃ ┃ ┣ 📜paginationpreview.webp
  ┃ ┃ ┗ 📜style.css
+ ┃ ┗ 📂UserProfileManagementSystem
+ ┃ ┃ ┣ 📂uploads
+ ┃ ┃ ┃ ┣ 📜defaultprofile.jpg
+ ┃ ┃ ┃ ┣ 📜profile1.jpg
+ ┃ ┃ ┃ ┣ 📜profile6.jpg
+ ┃ ┃ ┃ ┗ 📜profile7.jpg
+ ┃ ┃ ┣ 📜config.ini.php
+ ┃ ┃ ┣ 📜login.php
+ ┃ ┃ ┣ 📜logout.php
+ ┃ ┃ ┣ 📜main.php
+ ┃ ┃ ┣ 📜register.php
+ ┃ ┃ ┣ 📜style.css
+ ┃ ┃ ┗ 📜upload.php
  ┗ 📜Readme.md
 ```
 
