@@ -10,9 +10,9 @@
 
 <body>
 
-  <?php include_once("header.php");?>
-
+  <?php include("header.php");?>
   <?php include_once("main.php");?>
+  <?php require_once("contact.php")?>
   <?php include_once("footer.php");?>
 
 
