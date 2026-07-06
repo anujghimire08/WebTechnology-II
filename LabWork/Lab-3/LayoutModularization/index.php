@@ -12,8 +12,8 @@
 
   <?php include("header.php");?>
   <?php include_once("main.php");?>
-  <?php require_once("contact.php")?>
-  <?php include_once("footer.php");?>
+  <?php require("contact.php")?>
+  <?php require_once("footer.php");?>
 
 
 </body>
