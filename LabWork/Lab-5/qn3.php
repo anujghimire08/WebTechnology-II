@@ -1,5 +1,4 @@
 <?php
-
 class Person
 {
   protected string $name;
@@ -43,7 +42,7 @@ class Staff extends Person
   }
   function getStaff()
   {
-    return "Name: $this->name , Email: $this->email ,Student ID: $this->employeeID, Course: $this->department";
+    return "Name: $this->name , Email: $this->email ,Employee ID: $this->employeeID, Department: $this->department";
   }
 }
 $std1 = new Student();
