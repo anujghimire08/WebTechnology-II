@@ -1,0 +1,17 @@
+[
+    {
+        "courseID": 1,
+        "Title": "PHP",
+        "courseHrs": 24
+    },
+    {
+        "courseID": 2,
+        "Title": "Java",
+        "courseHrs": 14
+    },
+    {
+        "courseID": 3,
+        "Title": "DSA",
+        "courseHrs": 44
+    }
+]
