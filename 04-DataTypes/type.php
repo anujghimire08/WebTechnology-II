@@ -33,9 +33,9 @@ $class = new car();
 $class->color = "green";
 $class->price = 40000;
 echo $class-> color;
-echo var_dump ($class);
+var_dump ($class);
 
-$resource = fopen("type.txt","r") or die("not found!!");
+// $resource = @fopen("type.txt","r") or die("not found!!");
 // echo gettype($resource);
 
 ?>
