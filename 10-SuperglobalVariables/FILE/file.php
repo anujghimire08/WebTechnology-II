@@ -2,7 +2,7 @@
     // print_r($_FILES);
     if(isset($_FILES['user_file'])){
       // echo "<pre>";
-      // print_r($_FILES);
+      print_r($_FILES);
       // echo "</pre>";
 
      $path = basename($_FILES['user_file']["name"]);
