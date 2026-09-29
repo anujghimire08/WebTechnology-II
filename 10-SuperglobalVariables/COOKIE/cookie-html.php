@@ -37,7 +37,7 @@
     }
     
     if($_POST["button"]==="delete"){
-      setcookie("user",null,-1);
+      setcookie("user","",-1);
       echo "cookie removed";
     }
 
