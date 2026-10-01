@@ -13,5 +13,6 @@ class Esewa extends BankAccount {
 }
 
 echo Esewa::getBank();
+echo BankAccount::getBank();
 
 ?>
