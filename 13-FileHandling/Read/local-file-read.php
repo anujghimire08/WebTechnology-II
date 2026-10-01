@@ -5,7 +5,7 @@
   print_r(fread($file,filesize($path)));
   // print_r(json_decode(file_get_contents($path)));
   // o/p = stdClass Object ( [name] => Anuj [age] => 30 [country] => Nepal )
-  $data = json_decode(file_get_contents($path));
+  // $data = json_decode(file_get_contents($path));
   // var_dump($data); object
   // echo $data->name;
   // echo $data->age;
