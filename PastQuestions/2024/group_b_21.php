@@ -42,10 +42,12 @@ validation error on invalid data. Assume all required assumptions on database. -
       $errs[] = "Phone Number invalid format";
     }
 
+
+    $d = DateTime::createFromFormat("m-d-Y", $dob);
     if (empty($dob)) {
       $errs[] = "DOB (Date of birth) is required";
-    } else if (!preg_match("/^(0[1-9]|1[0-2])-[0-9]{2}-[0-9]{4}$/", $dob)) {
-      $errs[] = "DOB invalid format, follow MM-DD-YYYY format";
+    } else if (!$d || $d->format("m-d-Y") !== $dob) {
+      $errs[] = "DOB invalid format,please follow MM-DD-YYYY format";
     }
 
     if (empty($program)) {
@@ -57,10 +59,15 @@ validation error on invalid data. Assume all required assumptions on database. -
     }
 
     if (count($errs) === 0) {
-    $stmt =  $pdo->prepare("INSERT INTO cmat_registration (name,email,mobile,dob,program,gender) VALUES(?,?,?,?,?,?)");
-    $stmt->execute([
-      $name, $email, $pnum, $dob, $program, $gender
-    ]);
+      $stmt =  $pdo->prepare("INSERT INTO cmat_registration (name,email,mobile,dob,program,gender) VALUES(?,?,?,?,?,?)");
+      $stmt->execute([
+        $name,
+        $email,
+        $pnum,
+        $dob,
+        $program,
+        $gender
+      ]);
     }
   }
   ?>
@@ -99,7 +106,7 @@ validation error on invalid data. Assume all required assumptions on database. -
  </form>
 
  <?php
-  echo "<hr/> <h2>Errors:</h2>";
+  echo "<hr/> <h2>Errors List:</h2>";
   if (count($errs) > 0) {
     foreach ($errs as $err) {
       echo "<li style='color: red;'>{$err}</li>";
