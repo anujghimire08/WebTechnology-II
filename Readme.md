@@ -42,6 +42,182 @@ The purpose of this repository is to:
 
 ---
 
+## 🗺️ PHP Learning Path
+
+This roadmap reflects my PHP learning journey, progressing from **language fundamentals and request handling** to **file processing, database programming, OOP, security, authentication, Laravel, and hands-on projects**.
+
+```text
+[Phase 0: Development Environment]
+│
+└── .github
+    └── workflows
+        ├── php.yml ----------------------► Automated PHP testing & CI
+        └── welcome-bot.yml --------------► GitHub workflow automation
+
+
+[Phase 1: PHP Fundamentals]
+│
+├── 01-Echo ----------------------------► Output using echo & print
+├── 02-Variables -----------------------► Variables, constants & scope
+├── 03-PHPwithHTML ---------------------► Embedding PHP in HTML
+├── 04-DataTypes -----------------------► Strings, types & type handling
+├── 05-Operators -----------------------► Arithmetic, logical & null coalescing operators
+├── 06-BranchStatement -----------------► Conditions, loops & control flow
+├── 07-Functions -----------------------► User-defined, built-in, nested & arrow functions
+├── 08-Array ---------------------------► Indexed, associative & multidimensional arrays
+└── 09-Casting -------------------------► Type casting & type conversion
+
+
+[Phase 2: Request Handling & State Management]
+│
+├── 10-SuperglobalVariables
+│   ├── GET ----------------------------► URL parameter handling
+│   ├── POST ---------------------------► Form submission
+│   ├── REQUEST ------------------------► Combined request data
+│   ├── COOKIE -------------------------► Client-side state persistence
+│   ├── SESSION ------------------------► Server-side session management
+│   ├── SERVER -------------------------► Server & request information
+│   ├── GLOBALS ------------------------► Accessing global variables
+│   ├── ENV ----------------------------► Environment variables
+│   └── FILE ---------------------------► File upload handling
+│
+├── 11-Include -------------------------► Code reuse using include & require
+└── 12-EventHandling -------------------► Handling user-triggered events
+
+
+[Phase 3: File & Data Processing]
+│
+├── 13-FileHandling --------------------► Reading, writing & appending files
+├── 14-FileSystemHandling --------------► File and directory operations
+├── 15-JSONHandling --------------------► JSON encoding & decoding
+├── 16-DateandTime ---------------------► Date & time operations
+└── 17-FormHandling --------------------► Form processing, validation & sanitization
+
+
+[Phase 4: Building PHP Applications]
+│
+└── 18-BasicWebsite
+    ├── Reusable Layouts ----------------► Header & footer modularization
+    ├── Multi-page Navigation -----------► About, contact & main pages
+    └── CSS Integration -----------------► Styling PHP-based websites
+
+
+[Phase 5: Database Programming]
+│
+└── 19-PHPwithMySQL
+    │
+    ├── Database Connectivity
+    │   ├── MySQLi ----------------------► MySQL database connection
+    │   └── PDO -------------------------► PHP Data Objects
+    │
+    ├── DataStore -----------------------► INSERT operations
+    ├── DataRetrieval -------------------► SELECT & fetching records
+    ├── DataUpdate ----------------------► UPDATE operations
+    ├── DataDelete ----------------------► DELETE operations
+    ├── DataSearch ----------------------► Search & filtering
+    ├── PopulateForm --------------------► Loading records into forms
+    │
+    └── MSSQL ---------------------------► PHP connectivity with Microsoft SQL Server
+
+
+[Phase 6: Object-Oriented PHP]
+│
+└── 20-OOPs
+    │
+    ├── Basics --------------------------► Classes, objects & constructors
+    ├── Encapsulation -------------------► Getters & setters
+    ├── Abstraction ---------------------► Abstract classes & methods
+    ├── Interfaces ----------------------► Interface-based programming
+    ├── Type Hinting --------------------► Parameter & return types
+    ├── Method Chaining -----------------► Fluent method calls
+    ├── Traits --------------------------► Code reuse using traits
+    ├── Trait Overriding ----------------► Resolving trait method conflicts
+    ├── Static Binding ------------------► self, static & late static binding
+    ├── Magic Methods -------------------► __invoke(), __get(), __set()
+    ├── Autoloading ---------------------► Automatic class loading
+    ├── Namespaces ----------------------► Organizing classes
+    └── OOP with MySQL ------------------► Database CRUD using OOP + PDO
+
+
+[Phase 7: Security, Authentication & Error Handling]
+│
+├── 21-CrossSiteRequestForgery ---------► CSRF attack demonstration & prevention
+├── 22-FileValidation ------------------► Secure file upload validation
+├── 23-Hashing -------------------------► Password hashing & verification
+├── 24-ErrorHandling -------------------► Errors, exceptions & try-catch-finally
+└── 25-HTTPAuthentication --------------► HTTP Basic Authentication
+
+
+[Phase 8: Hands-on Lab Work]
+│
+└── LabWork
+    │
+    ├── Lab-1 ---------------------------► PHP introduction & basic syntax
+    ├── Lab-2 ---------------------------► Variables, constants, operators & control structures
+    ├── Lab-3 ---------------------------► Functions, strings & modular layouts
+    ├── Lab-4 ---------------------------► Arrays & regular expressions
+    ├── Lab-5 ---------------------------► Practical PHP programming
+    └── Lab-6 ---------------------------► Procedural data storage & course management
+
+
+[Phase 9: PHP Practice & Examination Preparation]
+│
+├── PHPPracticeQuestions
+│   ├── Basic Output --------------------► Printing & output
+│   ├── Variables & Data Types ----------► Variables & primitive types
+│   ├── Constants -----------------------► Constant declarations
+│   ├── Arithmetic Operators ------------► Mathematical operations
+│   ├── Assignment Operators ------------► Assignment expressions
+│   ├── Comparison Operators ------------► Comparison logic
+│   ├── Logical Operators ---------------► Boolean operations
+│   ├── String Operators ----------------► String manipulation
+│   ├── Conditional Operators -----------► Ternary & conditional expressions
+│   ├── Control Statements --------------► Conditions & loops
+│   ├── Functions -----------------------► Function practice
+│   └── File Inclusion ------------------► include & require exercises
+│
+└── PastQuestions
+    ├── 2024 ----------------------------► Semester examination solutions
+    ├── 2025 ----------------------------► Semester examination solutions
+    ├── 2026 ----------------------------► Semester examination solutions
+    └── FirstTerm -----------------------► First-term examination solutions
+
+
+[Phase 10: Laravel]
+│
+└── Laravel
+    ├── User.php ------------------------► Laravel model
+    ├── users.blade.php -----------------► Blade template
+    └── web.php -------------------------► Application routes
+
+
+[Phase 11: Mini & Academic Projects]
+│
+└── Projects
+    │
+    ├── LibraryManagementSystem
+    │   ├── Authentication --------------► User authentication & authorization
+    │   ├── Role Management -------------► Role-based access control
+    │   ├── Database Operations ----------► PHP + MySQL CRUD
+    │   └── Library Features -------------► Borrowing, returns & management
+    │
+    ├── Pagination ----------------------► Database pagination
+    │
+    ├── StudentManagementSystem ---------► Student record management
+    │
+    └── UserProfileManagementSystem
+        ├── Authentication --------------► Login & registration
+        ├── Profile Management -----------► User profile updates
+        ├── Image Upload ----------------► Profile picture handling
+        ├── Session Management -----------► User authentication state
+        └── CRUD Operations ---------------► Complete user management
+
+
+[Phase 12: SQL & Database Resources]
+│
+└── SQL
+    └── db_language.sql ------------------► SQL database/schema practice
+```
 
 ## 🚧 Project Status
 
