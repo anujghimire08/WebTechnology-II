@@ -42,126 +42,6 @@ The purpose of this repository is to:
 
 ---
 
-## 🗺️ PHP Learning Path
-This roadmap outlines my PHP learning journey, progressing from core language fundamentals to object-oriented programming, database development, security, and real-world projects.
-
-```text
-[Phase 0: Development Environment]
-│
-└── .github
-    └── workflows
-        ├── php.yml ----------------------► Automated PHP testing & CI
-        └── welcome-bot.yml -------------► GitHub workflow automation
-
-[Phase 1: PHP Fundamentals]
-│
-├── 01-Echo ----------------------------► Output statements (echo, print)
-├── 02-Variables -----------------------► Variables, constants & scope
-├── 03-PHPwithHTML ---------------------► Embedding PHP within HTML
-├── 04-DataTypes -----------------------► Primitive & compound data types
-├── 05-Operators -----------------------► Arithmetic, assignment, comparison & logical operators
-├── 06-BranchStatement -----------------► Conditional statements & loops
-├── 07-Functions -----------------------► User-defined, built-in, nested & arrow functions
-├── 08-Array ---------------------------► Indexed, associative & multidimensional arrays
-└── 09-Casting -------------------------► Type casting & type conversion
-
-[Phase 2: Request Handling & State Management]
-│
-├── 10-SuperglobalVariables
-│   ├── GET ----------------------------► URL parameter handling
-│   ├── POST ---------------------------► Form submission
-│   ├── REQUEST ------------------------► Unified request processing
-│   ├── COOKIE -------------------------► Client-side persistence
-│   ├── SESSION ------------------------► Session management
-│   ├── SERVER -------------------------► Server & request information
-│   ├── GLOBALS ------------------------► Global variable access
-│   └── FILE ---------------------------► Secure file uploads
-│
-├── 11-Include -------------------------► Modular code using include & require
-└── 12-EventHandling -------------------► Handling user-triggered events
-
-[Phase 3: File & Data Processing]
-│
-├── 13-FileHandling --------------------► Read & write text/JSON files
-├── 14-FileSystemHandling --------------► Directory & filesystem operations
-├── 15-JSONHandling --------------------► JSON encoding & decoding
-├── 16-DateandTime ---------------------► Date & time manipulation
-└── 17-FormHandling --------------------► Form validation & sanitization
-
-[Phase 4: Building PHP Applications]
-│
-└── 18-BasicWebsite --------------------► Multi-page website using reusable layouts
-
-[Phase 5: Database Programming]
-│
-└── 19-PHPwithMySQL
-    ├── Database Connectivity ----------► MySQLi & PDO connections
-    ├── DataStore ----------------------► INSERT operations
-    ├── DataRetrieval ------------------► SELECT queries
-    ├── DataUpdate ---------------------► UPDATE operations
-    ├── DataDelete ---------------------► DELETE operations
-    ├── DataSearch ---------------------► Search & filtering
-    └── PopulateForm -------------------► Editing existing records
-
-[Phase 6: Object-Oriented PHP]
-│
-└── 20-OOPs
-    ├── Basics -------------------------► Classes, objects & constructors
-    ├── Encapsulation ------------------► Getters & setters
-    ├── Type Hinting -------------------► Parameter & return types
-    ├── Method Chaining ----------------► Fluent interfaces
-    ├── Traits -------------------------► Code reuse
-    ├── Static Binding -----------------► Late static binding
-    ├── Magic Methods ------------------► __invoke(), __get(), __set()
-    ├── Autoloading --------------------► Automatic class loading
-    ├── Namespaces ---------------------► Organizing large applications
-    └── OOP with MySQL -----------------► Database CRUD using OOP
-
-[Phase 7: Security & Robustness]
-│
-├── 21-CrossSiteRequestForgery ---------► CSRF attack demonstration & prevention
-├── 22-FileValidation ------------------► Secure upload validation
-├── 23-Hashing -------------------------► Password hashing & verification
-└── 24-ErrorHandling -------------------► Error handling & debugging
-
-[Phase 8: Hands-on Practice]
-│
-├── LabWork
-│   ├── Lab-1 --------------------------► PHP introduction & syntax
-│   ├── Lab-2 --------------------------► Variables, operators & control structures
-│   ├── Lab-3 --------------------------► Functions & modular layouts
-│   ├── Lab-4 --------------------------► Arrays & regular expressions
-│   └── Lab-5 --------------------------► Practical PHP programming
-│
-├── PastQuestions ----------------------► Semester examination solutions
-│
-└── PHPPracticeQuestions
-    ├── Basic Output -------------------► Printing & output
-    ├── Variables & Data Types ---------► Variables & primitive types
-    ├── Constants ----------------------► Constant declarations
-    ├── Arithmetic Operators -----------► Mathematical operations
-    ├── Assignment Operators -----------► Assignment expressions
-    ├── Comparison Operators -----------► Comparison logic
-    ├── Logical Operators --------------► Boolean operations
-    ├── String Operators ---------------► String manipulation
-    ├── Conditional Operators ----------► Ternary & conditional expressions
-    ├── Control Statements -------------► Decision making & loops
-    ├── Functions ----------------------► Function practice
-    └── File Inclusion -----------------► include & require exercises
-
-[Phase 9: Mini Projects]
-│
-├── Pagination -------------------------► Database pagination implementation
-│
-└── UserProfileManagementSystem
-    ├── Authentication -----------------► Login & registration
-    ├── Profile Management -------------► User profile updates
-    ├── Image Upload -------------------► Profile picture uploads
-    ├── Session Management -------------► User authentication
-    └── CRUD Operations ----------------► Complete user management system
-```
-
----
 
 ## 🚧 Project Status
 
@@ -197,15 +77,36 @@ Throughout this subject, I am gradually learning:
  ┃ ┗ 📜index.php
  ┣ 📂02-Variables
  ┃ ┣ 📜constant.php
+ ┃ ┣ 📜magicalconstant.php
  ┃ ┗ 📜variables.php
  ┣ 📂03-PHPwithHTML
  ┃ ┗ 📜index.php
  ┣ 📂04-DataTypes
+ ┃ ┣ 📂String
+ ┃ ┃ ┣ 📜bin2hex.php
+ ┃ ┃ ┣ 📜chr.php
+ ┃ ┃ ┣ 📜explode.php
+ ┃ ┃ ┣ 📜hex2bin.php
+ ┃ ┃ ┣ 📜implode.php
+ ┃ ┃ ┣ 📜lcfirst.php
+ ┃ ┃ ┣ 📜nl2br.php
+ ┃ ┃ ┣ 📜number_format.php
+ ┃ ┃ ┣ 📜strcmp.php
+ ┃ ┃ ┣ 📜strcontains.php
+ ┃ ┃ ┣ 📜stripos.php
+ ┃ ┃ ┣ 📜strlen.php
+ ┃ ┃ ┣ 📜strpos.php
+ ┃ ┃ ┣ 📜strrev.php
+ ┃ ┃ ┗ 📜ucfirst.php
+ ┃ ┣ 📜global.php
  ┃ ┣ 📜type.php
  ┃ ┗ 📜type.txt
  ┣ 📂05-Operators
- ┃ ┗ 📜index.php
+ ┃ ┣ 📜logical.php
+ ┃ ┗ 📜nullcoalescing.php
  ┣ 📂06-BranchStatement
+ ┃ ┣ 📜break.php
+ ┃ ┣ 📜continue.php
  ┃ ┣ 📜die.php
  ┃ ┣ 📜dowhile.php
  ┃ ┣ 📜exit.php
@@ -218,8 +119,11 @@ Throughout this subject, I am gradually learning:
  ┣ 📂07-Functions
  ┃ ┣ 📜arrowfunc.php
  ┃ ┣ 📜built-in.php
+ ┃ ┣ 📜callbyrefrence.php
  ┃ ┣ 📜func.php
- ┃ ┗ 📜nested.php
+ ┃ ┣ 📜nested.php
+ ┃ ┣ 📜primeornot.php
+ ┃ ┗ 📜restinfunc.php
  ┣ 📂08-Array
  ┃ ┣ 📜arr.php
  ┃ ┣ 📜associativearray.php
@@ -233,6 +137,8 @@ Throughout this subject, I am gradually learning:
  ┃ ┣ 📂COOKIE
  ┃ ┃ ┣ 📜cookie-html.php
  ┃ ┃ ┗ 📜cookie.php
+ ┃ ┣ 📂ENV
+ ┃ ┃ ┗ 📜env.php
  ┃ ┣ 📂FILE
  ┃ ┃ ┣ 📂uploads
  ┃ ┃ ┃ ┣ 📜Flag_of_Nepal (1).png
@@ -253,9 +159,8 @@ Throughout this subject, I am gradually learning:
  ┃ ┃ ┗ 📜register.php
  ┃ ┣ 📂SERVER
  ┃ ┃ ┗ 📜server.php
- ┃ ┗ 📂SESSION
- ┃ ┃ ┣ 📜session-html.php
- ┃ ┃ ┗ 📜session.php
+ ┃ ┗ 📂Sessions
+ ┃ ┃ ┗ 📜basics.php
  ┣ 📂11-Include
  ┃ ┣ 📜code1.php
  ┃ ┗ 📜code2.php
@@ -263,15 +168,22 @@ Throughout this subject, I am gradually learning:
  ┃ ┗ 📂btn-click
  ┃ ┃ ┗ 📜btn.php
  ┣ 📂13-FileHandling
+ ┃ ┣ 📂append
+ ┃ ┃ ┣ 📜append.php
+ ┃ ┃ ┗ 📜notes.txt
  ┃ ┣ 📂Read
  ┃ ┃ ┣ 📜abc.json
  ┃ ┃ ┣ 📜dynamic-file-read.php
- ┃ ┃ ┗ 📜local-file-read.php
+ ┃ ┃ ┣ 📜local-file-read.php
+ ┃ ┃ ┣ 📜read.php
+ ┃ ┃ ┗ 📜test.txt
  ┃ ┗ 📂Write
  ┃ ┃ ┣ 📜dynamicdata-filecreate copy.php
  ┃ ┃ ┣ 📜dynamicdata.txt
  ┃ ┃ ┣ 📜staticdata-filecreate.php
- ┃ ┃ ┗ 📜staticdata.txt
+ ┃ ┃ ┣ 📜staticdata.txt
+ ┃ ┃ ┣ 📜write.php
+ ┃ ┃ ┗ 📜zytz.txt
  ┣ 📂14-FileSystemHandling
  ┃ ┣ 📜dynamicdata.txt
  ┃ ┣ 📜file-list.php
@@ -324,9 +236,14 @@ Throughout this subject, I am gradually learning:
  ┃ ┃ ┣ 📜datalist.php
  ┃ ┃ ┣ 📜static-data.php
  ┃ ┃ ┗ 📜update.php
- ┃ ┗ 📂PopulateForm
+ ┃ ┣ 📂MSSQL
+ ┃ ┃ ┗ 📜config.php
+ ┃ ┣ 📂PopulateForm
  ┃ ┃ ┣ 📜datalist.php
  ┃ ┃ ┗ 📜form.php
+ ┃ ┣ 📜config.php
+ ┃ ┣ 📜insert.php
+ ┃ ┗ 📜read.php
  ┣ 📂20-OOPs
  ┃ ┣ 📂NameSpace
  ┃ ┃ ┣ 📜admin.php
@@ -336,15 +253,19 @@ Throughout this subject, I am gradually learning:
  ┃ ┃ ┣ 📜config.php
  ┃ ┃ ┣ 📜crud.php
  ┃ ┃ ┗ 📜pdo.php
+ ┃ ┣ 📜abstraction.php
  ┃ ┣ 📜autoload.php
  ┃ ┣ 📜BankAccount.php
  ┃ ┣ 📜basics.php
  ┃ ┣ 📜call.php
  ┃ ┣ 📜circle.php
+ ┃ ┣ 📜construct.php
  ┃ ┣ 📜formhandlingoops.php
  ┃ ┣ 📜get.php
+ ┃ ┣ 📜interface.php
  ┃ ┣ 📜invoke.php
  ┃ ┣ 📜methodchaining.php
+ ┃ ┣ 📜selfstatic.php
  ┃ ┣ 📜set.php
  ┃ ┣ 📜staticbindng.php
  ┃ ┣ 📜traits.php
@@ -359,7 +280,10 @@ Throughout this subject, I am gradually learning:
  ┃ ┗ 📜hashing.php
  ┣ 📂24.ErrorHandling
  ┃ ┣ 📜err.php
- ┃ ┗ 📜err.txt
+ ┃ ┣ 📜err.txt
+ ┃ ┗ 📜try_catch_finally.php
+ ┣ 📂25-HTTPAuthentication
+ ┃ ┗ 📜auth.php
  ┣ 📂LabWork
  ┃ ┣ 📂Lab-1
  ┃ ┃ ┣ 📜info.php
@@ -395,13 +319,41 @@ Throughout this subject, I am gradually learning:
  ┃ ┃ ┣ 📜Lab4 Output.docx
  ┃ ┃ ┣ 📜M-DArray-HTML.php
  ┃ ┃ ┗ 📜regex.php
- ┃ ┗ 📂Lab-5
+ ┃ ┣ 📂Lab-5
+ ┃ ┃ ┣ 📜Lab 5.pdf
+ ┃ ┃ ┣ 📜Lab5 Output.docx
  ┃ ┃ ┣ 📜qn1.php
  ┃ ┃ ┣ 📜qn2.php
  ┃ ┃ ┣ 📜qn3.php
  ┃ ┃ ┣ 📜qn4.php
  ┃ ┃ ┗ 📜qn5.php
+ ┃ ┗ 📂Lab-6
+ ┃ ┃ ┣ 📜courses_procedural.txt
+ ┃ ┃ ┗ 📜ProceduralDataStorage.php
+ ┣ 📂Laravel
+ ┃ ┣ 📜User.php
+ ┃ ┣ 📜users.blade.php
+ ┃ ┗ 📜web.php
  ┣ 📂PastQuestions
+ ┃ ┣ 📂2024
+ ┃ ┃ ┣ 📜config.php
+ ┃ ┃ ┣ 📜group_b_15.php
+ ┃ ┃ ┣ 📜group_b_19.php
+ ┃ ┃ ┣ 📜group_b_20.php
+ ┃ ┃ ┣ 📜group_d_21.php
+ ┃ ┃ ┣ 📜group_d_22.php
+ ┃ ┃ ┗ 📜note.txt
+ ┃ ┣ 📂2025
+ ┃ ┃ ┣ 📜employee.txt
+ ┃ ┃ ┣ 📜group_b_17.php
+ ┃ ┃ ┣ 📜group_b_18.php
+ ┃ ┃ ┗ 📜group_d_21.php
+ ┃ ┣ 📂2026
+ ┃ ┃ ┣ 📜group_b_13.php
+ ┃ ┃ ┣ 📜group_b_16.php
+ ┃ ┃ ┣ 📜group_c_20.php
+ ┃ ┃ ┣ 📜group_d_21.php
+ ┃ ┃ ┗ 📜group_d_22.php
  ┃ ┗ 📂FirstTerm
  ┃ ┃ ┣ 📜group_b_2.php
  ┃ ┃ ┣ 📜group_b_3.php
@@ -498,25 +450,12 @@ Throughout this subject, I am gradually learning:
  ┃ ┃ ┗ 📜qn70.php
  ┃ ┗ 📜PHP Practice Questions.pdf
  ┣ 📂Projects
+ ┃ ┣ 📂LibraryManagementSystem
  ┃ ┣ 📂Pagination
- ┃ ┃ ┣ 📜db.php
- ┃ ┃ ┣ 📜index.php
- ┃ ┃ ┣ 📜pagination.php
- ┃ ┃ ┣ 📜paginationpreview.webp
- ┃ ┃ ┗ 📜style.css
+ ┃ ┣ 📂StudentManagementSystem
  ┃ ┗ 📂UserProfileManagementSystem
- ┃ ┃ ┣ 📂uploads
- ┃ ┃ ┃ ┣ 📜defaultprofile.jpg
- ┃ ┃ ┃ ┣ 📜profile1.jpg
- ┃ ┃ ┃ ┣ 📜profile6.jpg
- ┃ ┃ ┃ ┗ 📜profile7.jpg
- ┃ ┃ ┣ 📜config.ini.php
- ┃ ┃ ┣ 📜login.php
- ┃ ┃ ┣ 📜logout.php
- ┃ ┃ ┣ 📜main.php
- ┃ ┃ ┣ 📜register.php
- ┃ ┃ ┣ 📜style.css
- ┃ ┃ ┗ 📜upload.php
+ ┣ 📂SQL
+ ┃ ┗ 📜db_language.sql
  ┗ 📜Readme.md
 ```
 
